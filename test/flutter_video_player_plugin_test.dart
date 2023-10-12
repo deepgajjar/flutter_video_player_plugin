@@ -1,5 +1,4 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:flutter_video_player_plugin/flutter_video_player_plugin.dart';
 import 'package:flutter_video_player_plugin/flutter_video_player_plugin_platform_interface.dart';
 import 'package:flutter_video_player_plugin/flutter_video_player_plugin_method_channel.dart';
 import 'package:plugin_platform_interface/plugin_platform_interface.dart';
@@ -20,7 +19,7 @@ void main() {
   });
 
   test('getPlatformVersion', () async {
-    FlutterVideoPlayerPlugin flutterVideoPlayerPlugin = FlutterVideoPlayerPlugin();
+    // FlutterVideoPlayerPlugin flutterVideoPlayerPlugin = const FlutterVideoPlayerPlugin();
     MockFlutterVideoPlayerPluginPlatform fakePlatform = MockFlutterVideoPlayerPluginPlatform();
     FlutterVideoPlayerPluginPlatform.instance = fakePlatform;
 

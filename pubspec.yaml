@@ -1,7 +1,10 @@
 name: flutter_video_player_plugin
-description: A new Flutter project.
+description: A new Flutter plugin for video player.
 version: 0.0.1
-homepage:
+homepage: https://github.com/deepgajjar/flutter_video_player_plugin
+repository: https://github.com/deepgajjar/flutter_video_player_plugin
+#authors:
+#  - Deep Gajjar
 
 environment:
   sdk: '>=3.0.6 <4.0.0'

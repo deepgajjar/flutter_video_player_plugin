@@ -5,8 +5,6 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
 
-import 'flutter_video_player_plugin_platform_interface.dart';
-
 class FlutterVideoPlayerPlugin extends StatefulWidget {
   const FlutterVideoPlayerPlugin({super.key});
 
@@ -26,7 +24,7 @@ class _FlutterVideoPlayerPlugin extends State<FlutterVideoPlayerPlugin>{
           hitTestBehavior: PlatformViewHitTestBehavior.opaque,
           gestureRecognizers:  const <Factory<OneSequenceGestureRecognizer>>{});
     }, onCreatePlatformView: (params) {
-      return PlatformViewsService.initAndroidView(
+      return PlatformViewsService.initSurfaceAndroidView(
           id: params.id,
           viewType: viewType,
           layoutDirection: TextDirection.rtl,
