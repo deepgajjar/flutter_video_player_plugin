@@ -22,7 +22,11 @@ class _MyAppState extends State<MyApp> {
           title: const Text('Plugin example app'),
         ),
         body: const Center(
-          child: FlutterVideoPlayerPlugin(),
+          child: FractionallySizedBox(
+            heightFactor: 0.06,
+            child:FlutterVideoPlayerPlugin() ,
+          ),
+          // child: FlutterVideoPlayerPlugin(),
         ),
       ),
     );
